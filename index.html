@@ -6,12 +6,26 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <style>
-            
+            input:focus{
+                outline: none;
+            }
+
+            input[type=text] {
+                /* Give input text a lighter color */
+                color: #464646;
+                margin: 0 0 0 5px;
+            }
+
+            input[type=submit]:hover {
+                /* Add box-shadow when hovering button (border adds space) */
+                box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+            }
+
             #Googlelogo{
                 width: 350px; 
             }
 
-            #middle {
+            #search-container {
                 margin-top: 300px;
                 text-align: center;
             }
@@ -26,6 +40,7 @@
                 text-align: center;
                 margin-top: 20px;
                 border-radius: 50px;
+                /*for the different browsers different commands*/
                 -moz-border-radius: 10px;
                 -webkit-border-radius: 10px;
                 -o-border-radius: 10px; 
@@ -33,6 +48,7 @@
 
             .searchbar{
                 width: 600px;
+                /*for the different browsers different commands*/
                 border-radius: 100px;
                 -moz-border-radius: 100px;
                 -webkit-border-radius: 100px;
@@ -47,7 +63,7 @@
             <a href="advanced.html">Advanced</a>
         </div> 
 
-        <div id="middle">
+        <div id="search-container">
             <img id="Googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
             <form action="https://www.google.com/search">
                 <input type="text" name="q" class="searchbar">
