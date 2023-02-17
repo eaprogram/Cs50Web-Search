@@ -8,8 +8,9 @@
         <style>
             input:focus, input:hover{
                 outline: none;
-                box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+                box-shadow: 0px 0px 2px #000000cc;
                 /* Give input box shadow an removes outline */
+                cursor: pointer;
             }
 
             input[type=text] {
@@ -18,10 +19,6 @@
                 margin: 0 0 0 5px;
             }
 
-            input[type=submit]:hover {
-                /* Add box-shadow when hovering button (border adds space) */
-                box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
-            }
 
             #Googlelogo{
                 width: 350px; 
@@ -35,11 +32,24 @@
             }
     
             .head-links{
-                margin: 15px;
+                margin-top: 15px;
+                margin-right: 10px;
                 text-align: right;
-                /**Adds Space and aligns it right*/
+                /*Adds Space and aligns it right*/
+                font-size: 20px;
+                font-family: Roboto, Arial, sans-serif;
+                color: #202124;
             }
 
+            .ifl{
+                text-align: center;
+                margin-top: 20px;
+                border-radius: 50px;
+                /*for the different browsers different commands*/
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -o-border-radius: 10px; 
+            }
     
             .searchbutton{
                 text-align: center;
@@ -64,8 +74,8 @@
     </head>
     <body>
         <div class="head-links">
-            <a href="image.html">Image</a>
-            <a href="advanced.html">Advanced</a>
+            <a href="image.html" class="head-links">Image</a>
+            <a href="advanced.html" class="head-links">Advanced</a>
         </div> 
 
         <div id="search-container">
@@ -74,6 +84,7 @@
                 <input type="text" name="q" class="searchbar">
                 <div>
                     <input type="submit" value="Google Search" class="searchbutton">
+                    <input type="submit" value="I'm feeling lucky" class="ifl">
                 </div>
             </form>
         </div>
