@@ -6,26 +6,28 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <style>
+
             input:focus, input:hover{
                 outline: none;
                 box-shadow: 0px 0px 2px #000000cc;
-                /* Give input box shadow an removes outline */
+                /*Give input box shadow an removes outline */
                 cursor: pointer;
-            }
+            } 
 
-            input[type=text] {
+           input[type=search] {
                 /* Give input text a lighter color */
                 color: #464646;
                 margin: 0 0 0 5px;
-            }
+            } 
 
 
             #Googlelogo{
                 width: 350px; 
+                margin-bottom: 30px;
                 /* scales the Google Logo*/
             }
 
-            #search-container {
+            #search-container{
                 margin-top: 300px;
                 text-align: center;
                 /*Adds Space at the top an aligns it in the middle*/
@@ -65,30 +67,36 @@
             .ifl{
                 text-align: center;
                 margin-top: 20px;
-                border-radius: 50px;
-                /*for the different browsers different commands*/
-                -moz-border-radius: 10px;
-                -webkit-border-radius: 10px;
-                -o-border-radius: 10px; 
+                background-color: #f2f2f2;
+                border-radius: 10px;
             }
     
             .searchbutton{
                 text-align: center;
                 margin-top: 20px;
-                border-radius: 50px;
-                /*for the different browsers different commands*/
-                -moz-border-radius: 10px;
-                -webkit-border-radius: 10px;
-                -o-border-radius: 10px; 
+                background-color: #f2f2f2;
+                border-radius: 10px;
             }
 
             .searchbar{
                 width: 600px;
-                /*for the different browsers different commands*/
                 border-radius: 100px;
-                -moz-border-radius: 100px;
-                -webkit-border-radius: 100px;
-                -o-border-radius: 100px;
+               /* https://nikitahl.com/search-icon-inside-input */
+                border-style: groove;
+                line-height: 24px;
+            } 
+
+            button[type="submit"] {
+                text-indent: -999px;
+                overflow: hidden;
+                width: 40px;
+                padding: 0;
+                margin: 0;
+                border: 1px solid transparent;
+                border-radius: inherit;
+                background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+                cursor: pointer;
+                opacity: 0.7;
             }
 
         </style>
@@ -102,12 +110,13 @@
         <div id="search-container">
             <img id="Googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
             <form action="https://www.google.com/search">
-                <input type="text" name="q" class="searchbar">
+                <input type="search" name="q" class="searchbar">
+                <button type="submit">Search</button>
                 <div>
                     <input type="submit" value="Google Search" class="searchbutton">
                     <input type="submit" value="I'm feeling lucky" class="ifl">
                 </div>
             </form>
-        </div>
+        </div>  
     </body>
 </html>
