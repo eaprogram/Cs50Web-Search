@@ -18,6 +18,7 @@
                 /* Give input text a lighter color */
                 color: #464646;
                 margin: 0 0 0 5px;
+                inset-inline-start: 20px;
             } 
 
 
@@ -83,10 +84,9 @@
                 border-radius: 100px;
                /* https://nikitahl.com/search-icon-inside-input */
                 border-style: groove;
-                line-height: 24px;
             } 
 
-            button[type="submit"] {
+            #lup[type="submit"] {
                 text-indent: -999px;
                 overflow: hidden;
                 width: 40px;
@@ -111,7 +111,7 @@
             <img id="Googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
             <form action="https://www.google.com/search">
                 <input type="search" name="q" class="searchbar">
-                <button type="submit">Search</button>
+                <button id="lup" type="submit">Search</button>
                 <div>
                     <input type="submit" value="Google Search" class="searchbutton">
                     <input type="submit" value="I'm feeling lucky" class="ifl">
