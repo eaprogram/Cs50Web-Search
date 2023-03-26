@@ -6,19 +6,19 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <style>
-
-            input:focus, input:hover{
+        /*    input:focus, input:hover{
                 outline: none;
                 box-shadow: 0px 0px 2px #000000cc;
-                /*Give input box shadow an removes outline */
+                /*Give input box shadow an removes outline 
                 cursor: pointer;
-            } 
+            } */
 
-           input[type=search] {
+           input[type=search]{
                 /* Give input text a lighter color */
                 color: #464646;
                 margin: 0 0 0 5px;
-                inset-inline-start: 20px;
+                border: none;
+                outline: none;
             } 
 
 
@@ -81,7 +81,7 @@
 
             .searchbar{
                 width: 600px;
-                border-radius: 100px;
+                border-radius: 24px;
                /* https://nikitahl.com/search-icon-inside-input */
                 border-style: groove;
             } 
@@ -98,7 +98,21 @@
                 cursor: pointer;
                 opacity: 0.7;
             }
+/*
+            #sbau{
+                height: 60x;
+                width: 600px;
+                border:#e8eaedc7;background-color: #464646;
+            }
+*/
 
+            #sb{
+                width:620px;
+                border:groove grey;
+                border-radius: 25px;
+                box-shadow: #464646;
+                background-color:aqua;
+            }
         </style>
     </head>
     <body>
@@ -110,8 +124,17 @@
         <div id="search-container">
             <img id="Googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
             <form action="https://www.google.com/search">
-                <input type="search" name="q" class="searchbar">
-                <button id="lup" type="submit">Search</button>
+
+                <!--<div id="sbau">
+                    <button id="lup" type="submit">Search</button>-->
+                    <div id="sb">
+                        <label for="isb">
+                            <button id="lup" type="submit">Search</button>
+                        </label>
+                        <input id="isb" type="search" name="q" class="searchbar">
+                    </div>
+                <!--</div>-->
+                
                 <div>
                     <input type="submit" value="Google Search" class="searchbutton">
                     <input type="submit" value="I'm feeling lucky" class="ifl">
