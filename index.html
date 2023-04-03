@@ -6,6 +6,9 @@
         
         <style>
             .head-links-left{
+                display: inline-flex;
+                justify-content: flex-start;
+                flex-direction: row;
                 margin-top: 15px;
                 margin-left: 10px;
                 width: 300px;
@@ -17,6 +20,11 @@
             }
 
             .head-links-right{
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                justify-content: right;
+                float: right;
                 margin-top: 15px;
                 margin-right: 10px;
                 text-align: right;
@@ -31,21 +39,22 @@
                 text-decoration: underline;
             }
 
-            .head-links-img, .head-links-adv, .head-links-abt, .head-links-st{
-                font-family: Roboto, Arial, sans-serif;
+            .head-links-adv, .head-links-img, .head-links-abt, .head-links-st{
+                font-family: Arial, sans-serif;
+                font-size: 14px;
                 color: #202124;
                 text-decoration: none; 
             }
 
-           /* .head-links-adv{
-                font-family: Roboto, Arial, sans-serif;
-                color: #202124;
-                text-decoration: none; 
-            }*/
+            .head-links-abt{
+                margin-right: 30px;
+                margin-left: 15px;
+            }
 
-            /*.head-links-adv:hover{
-                text-decoration: underline;
-            }*/
+            .head-links-adv{
+                margin-left: 20px;
+                margin-right: 15px;
+            }
 
             #search-container{
                 margin-top: 250px;
@@ -64,7 +73,7 @@
                 outline: none;
                 width: 582px;
                 height: 34px;
-                font-size: 20px;
+                font-size: 14px;
                 border-radius: 24px;
                 border-style: groove;
                 border-color: 5px, #202124;
