@@ -3,33 +3,26 @@
     <head>
         <title>Image Search</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            #Googlelogo{
-                width: 300px; 
-            }
-
-            #middle {
-                margin-top: 200px;
-                text-align: center;
-                }
-
-            #home{
-                text-align: right;
-                margin: 15px;
-            }
-        </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+
     </head>
     <body>
-        <div id="home">
-            <a href="index.html">Home</a>
-        </div>
+        <div class="head-links-right">
+            <a href="index.html" class="head-links-img">Home</a>
+        </div> 
         
-        <div id="middle">
-            <img id="Googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-            <form action="https://www.google.com/search">
-                <input type="text" name="q">
-                <input type="hidden" name="tbm" value="isch">
+        <div class="search-container">
+                <img class="Googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+                <span class="img-sp">Images</span><br>
+            <form action="https://www.google.com/search" method="get">
+
+                <input type="text" placeholder="Search..." name="q" class="ipf">
+
+                <div class="buttons">
+                    <input type="submit" value="Google Search" class="searchbutton">
+                    <input type="hidden" name="tbm" value="isch">
+                </div>
             </form>
         </div>
     </body>
