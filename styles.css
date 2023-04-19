@@ -158,3 +158,28 @@ input[type=submit]:hover {
     flex-direction: row;
     justify-content: center;
 }
+
+.hidden{
+    height: 150px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-end;
+    font-size: 14px;
+}
+
+.upper-bottom{
+    background: #f2f2f2;
+    color: #70757a;
+    border: 1px solid #dadce0;
+    text-align: left;
+    padding: 15px;
+}
+
+.lower-bottom{
+    background: #f2f2f2;
+    padding: 0 20px;
+    height: 65px;
+}
