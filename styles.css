@@ -179,7 +179,18 @@ input[type=submit]:hover {
 }
 
 .lower-bottom{
+    display: flex;
+    text-align: left;
     background: #f2f2f2;
-    padding: 0 20px;
     height: 65px;
+}
+
+.git, .insta, .yt{
+    color: #70757a;
+    padding: 20px; 
+    text-decoration: none;
+}
+
+.git:hover, .insta:hover, .yt:hover{
+    text-decoration: underline;
 }
