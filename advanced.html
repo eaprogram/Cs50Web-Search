@@ -3,24 +3,28 @@
     <head>
         <title>Image Search</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link href="styles.css" rel="stylesheet">
         <link rel="website icon" type="png" href="google.png">
     </head>
     <body>
         <div class="home">
-            <a href="index.html">Home</a>
-        </div>
-
-        <div id="middle">
-            <form action="https://www.google.com/search">
-                <div><label>alle mit..</label><input type="text" name="as_q"></div>
-                <div><label>genau dieses...</label><input type="text" name="as_epq"></div>
-                <div><label>eines dieser...</label><input type="text" name="as_oq"></div>
-                <div><label>keines dieser...</label><input type="text" name="as_eq"></div>
-                <div><label>von</label><input type="text" name="as_nlo"></div>
-                <div><label>bis</label><input type="text" name="as_nhi"></div>
-                <input type="submit" value="Advanced Search">
+            <a href="index.html"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="adv-logo" alt="Google"></a>
+            <a href="index.html" class="home-h">Home</a>
+        </div> 
+        <div class="adv-header">Advanced Search</div>
+        <div class="adv-container">
+            <div class="find">Find pages with.....</div>
+            <div>
+                <table>
+                    <tbody>
+                        <tr><td>all these words:</td><td><input type="text" name="as_q" class="inp-adv"></td></tr>
+                        <tr><td>this exact word or phrase:</td><td><input type="text" name="as_epq" class="inp-adv"></td></tr>
+                        <tr><td>any of these words:</td><td><input type="text" name="as_oq" class="inp-adv"></td></tr>
+                        <tr><td>none of these words:</td><td><input type="text" name="as_eq" class="inp-adv"></td></tr>
+                        <tr><td>numbers ranging form:</td><td><input type="text" name="as_nlo" class="inp-adv-num"><span class="to">to:</span><input type="text" name="as_nhi" class="inp-adv-num"></td></tr>
+                        <tr><td></td><td></td><td><input type="submit" value="Advanced Search" class="adv-sb"></td></tr>
+                    </tbody>
+                </table>
             </form>
         </div>
     </body>
