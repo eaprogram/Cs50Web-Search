@@ -15,20 +15,27 @@
 
         <div class="adv-container">
 
-            <div class="find">Find pages with.....</div>
-
-                <form action="https://google.com/search">
+                <form action="https://google.com/search" method="get">
                     <table>
                         <tbody>
-                            <tr><td>all these words:</td><td><input type="text" name="as_q" class="inp-adv"></td></tr>
-                            <tr><td>this exact word or phrase:</td><td><input type="text" name="as_epq" class="inp-adv"></td></tr>
-                            <tr><td>any of these words:</td><td><input type="text" name="as_oq" class="inp-adv"></td></tr>
-                            <tr><td>none of these words:</td><td><input type="text" name="as_eq" class="inp-adv"></td></tr>
-                            <tr><td>numbers ranging form:</td><td><input type="text" name="as_nlo" class="inp-adv-num"><span class="to">to:</span><input type="text" name="as_nhi" class="inp-adv-num"></td></tr>
+                            <tr><td class="find">Find pages with...</td><td></td>
+                                <td class="find">To do this in the search box.</td></tr>
+                            <tr><td class="adv-labl">all these words:</td><td><input type="text" name="as_q" class="inp-adv"></td>
+                                <td class="explanation">Type the importatnt words</td></tr>
+                            <tr><td class="adv-labl">this exact word or phrase:</td><td><input type="text" name="as_epq" class="inp-adv"></td>
+                                <td class="explanation">Put exact words in quotes</td></tr>
+                            <tr><td class="adv-labl">any of these words:</td><td><input type="text" name="as_oq" class="inp-adv"></td>
+                                <td class="explanation">Type OR between all words you want</td></tr>
+                            <tr><td class="adv-labl">none of these words:</td><td><input type="text" name="as_eq" class="inp-adv"></td>
+                                <td class="explanation">Put a minus sign justr before words that you don't want</td></tr>
+                            <tr><td class="adv-labl">numbers ranging form:</td><td><input type="text" name="as_nlo" class="inp-adv-num">
+                                <span class="to">to:</span><input type="text" name="as_nhi" class="inp-adv-num"></td>
+                                <td class="explanation">Put two full stops between the numbers and add a unit of measurement</td></tr>
+                            <tr><td></td><td></td><td><input type="submit" value="Advanced Search" class="adv-sb"></td></tr>
                         </tbody>
                     </table>
-                    <input type="submit" value="Advanced Search" class="adv-sb">
                 </form>
+             </div>
         </div>
     </body>
 </html>

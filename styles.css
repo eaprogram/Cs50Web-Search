@@ -92,7 +92,7 @@
 .img-sp{
     color:#4285f4;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px/16px;
+    font-size: 16px;
     position: relative;
     right: 60px;
     top: 20px;
@@ -110,8 +110,7 @@
     border-color: 5px, #202124;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat scroll 10px 9px;         
     opacity: 0.7;       
-    padding-left:35px;
-    /* https://nikitahl.com/search-icon-inside-input */
+    padding-left: 35px;
 } 
 
 .ipf:hover, .ipf:focus{
@@ -216,7 +215,7 @@ input[type=submit]:hover {
     height: 50px;
     margin-top: 50px;
     padding-left: 45px;
-    border-bottom:1px solid #acaeb0;
+    border-bottom: 1px solid #acaeb0;
 }
 
 .adv-container{
@@ -228,8 +227,8 @@ input[type=submit]:hover {
 .find{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 45px;
-    padding-left: 5px;
     padding-bottom: 15px;
+    font-size: 16px;
 }
 
 .adv-sb{
@@ -249,14 +248,32 @@ td{
 .inp-adv{
     width: 505px;
     height: 20px;
+    font-size: 14px;
+    padding: 1px 8px; 
 }
 
 .inp-adv-num{
+    padding: 1px 8px;
     height: 20px;
-    width: 225px;
+    width: 216.5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.inp-adv:hover, .inp-adv:focus, .inp-adv-num:hover, .inp-adv-num:focus{
+    outline: none;
+    box-shadow: 0 0 3px grey;
 }
 
 .to{
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.adv-labl{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.explanation{
+    font-size: 10px;
+    color: #464646;
 }
