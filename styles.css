@@ -80,6 +80,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 250px;
 }
 
 .Googlelogo{
@@ -172,13 +173,14 @@ input[type=submit]:hover {
     justify-content: center;
 }
 
+.hidden{
+    height: 150px;
+}
+
  .bottom{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    align-content : flex-end;
-    align-items: flex-start;
-    justify-content: center;
     font-size: 14px;
 }
 
@@ -199,14 +201,14 @@ input[type=submit]:hover {
     height: 65px;
 }
 
-.git, .insta, .yt{
+.git, .yt{
     font-family: Arial, Helvetica, sans-serif;
     color: #70757a;
     padding: 20px; 
     text-decoration: none;
 }
 
-.git:hover, .insta:hover, .yt:hover{
+.git:hover, .yt:hover{
     text-decoration: underline;
 }
 
@@ -256,11 +258,8 @@ input[type=submit]:hover {
 }
 
 .adv-sb:hover{
-    background-color: #5f9cfc;
-}
-
-.adv-sb:hover{
     cursor: pointer;
+    background-color: #5f9cfc;
 }
 
 td{
